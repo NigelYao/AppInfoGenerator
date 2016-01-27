@@ -3,21 +3,30 @@ get app category( type ), app info, app icon, and introduce for android apps by 
 根据包名，批量或者单独获取某个Android应用的基本信息（如应用名称，应用分类，应用简介及应用标签等）
 
 ## Usage 
-git clone https://github.com/NigelYao/AppInfoGenerator.git
-npm start
+`git clone https://github.com/NigelYao/AppInfoGenerator.git`
+
+`npm start`
 
 ## Running
 check out single package:
-GET http://localhost:8080/app/category/com.android.chrome
+
+`GET http://localhost:8080/app/category/com.android.chrome`
+
 or with multiple packages:
+
+```
 POST http://localhost:8080/app/category
+
 formdata packages:com.google.earth,com.android.chrome,com.google.android.gm
+```
 
 ## Also
 try above with http://api.dive360.in/app/category
+
 your requested packages data will be cached on the server, and cached data will be synced with this repo
 
 ## Stucture
+```
 {
     "package": "lysesoft.andftp",
     "category": "软件",
@@ -29,6 +38,7 @@ your requested packages data will be cached on the server, and cached data will 
     "flavor": "wandoujia",
     "flavorName": "豌豆荚"
 }
+```
 
 ## Credits
 data matained from wandoujia.com due to much more complete database.
