@@ -21,7 +21,7 @@ formdata packages:com.google.earth,com.android.chrome,com.google.android.gm
 ```
 
 ## Also
-try above with http://api.dive360.in/app/category
+try above with http://www.dive360.in:3000/app/category
 
 your requested packages data will be cached on the server, and cached data will be synced with this repo
 
